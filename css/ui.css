@@ -1,0 +1,95 @@
+
+
+
+
+
+@charset "utf-8";
+@import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, button, abbr, acronym, address, code, del, 
+dfn, em, img, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, 
+td, hr{margin:0;padding:0;font-size:100%;box-sizing: border-box;}   
+body{height:100%;min-height:100%;font-family:'Noto Sans Korean','Malgun Gothic','맑은고딕','돋움',dotum, sans-serif;font-size:16px;color:#737373;line-height:1.5;background:url(../images/content_bg4.png) repeat;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal}
+ol, ul, li {list-style:none}
+table {width:100%; border-collapse:collapse;border-spacing:0}
+form, fieldset, iframe {display:block;border:0}
+img, button {border:0 none;vertical-align:top;}
+a{text-decoration:none;}
+hr {height:0; display:none}
+i, em, address{font-style:normal}
+label, button{cursor:pointer}
+blockquote, q {quotes:none}
+caption, legend {overflow:hidden;visibility:hidden;position:absolute;width:0;height:0;padding:0;margin:0;font-size:0;text-indent:-100%;white-space:nowrap;z-index:-1}
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {display:block;box-sizing: border-box;}
+input, textarea, select, button {font-family:'Noto Sans Korean','Malgun Gothic','맑은고딕','돋움',dotum, sans-serif;font-size:16px;color:#919090;line-height:1.5;letter-spacing:0;vertical-align:middle; border:none;}
+input, textarea {margin:0;padding:0;  background:none; box-sizing:border-box;}
+textarea {resize:none}
+a {color:#919090;text-decoration:none}
+a:link, a:visited {text-decoration:none}
+a:hover {text-decoration:none}
+.blind{display: none;overflow: hidden;position: absolute;width: 0;height: 0;padding: 0;margin: 0; font-size: 0;line-height: 0; text-indent: -9999em;visibility: hidden;outline: none;z-index: -1;}
+html,body{overflow:hidden;height:100%;}
+
+/*Layout*/
+body{background:url(../images/clean.jpg) repeat; }
+#wrap{width:100%; height:100%; padding-right:180px;}
+#wrap > h1{font-size:0;}
+.logo_right{position:relative; right:-70px; top:70px;}
+.logo_right img{width:80px;}
+.logo_left{position:relative; left:0px; top:0px;}
+.logo_left img{width:60px; padding-top: 20px;}
+#wrap header{width:220px; height:100%; position:fixed; right:0px; top:0px; background:url(../images/bwallmenu.png) repeat-y; z-index:11;}
+#wrap header nav{width:100%; height:100%;} 
+#wrap header nav ul{ width:100%; height:100%; display:flex; flex-direction:column; justify-content:center;}
+#wrap header nav ul li{list-style:none; margin:0px 0px 15px 30px; padding-left:30px; position:relative; } 
+#wrap header nav ul li a{font-size:16px; color:#fff; font-weight:600; line-height:30px;}
+#wrap header nav ul li:after{content:""; display:none; width:5px; height:5px; border-radius:50%; background:#fff; position:absolute; left:0px; top:13px;}
+#wrap header nav ul li:hover a,#wrap header nav ul li.on a{color:#00BFFF;} 
+#wrap header nav ul li:hover:after,#wrap header nav ul li.on:after{background:#00BFFF;}
+
+#topMenu {height: 100px; width: 3600px; margin: 0; position: relative; background: rgba(0,0,0,0.5);}
+#topMenu ul{list-style-type:none; margin:0; padding:0;}
+#topMenu ul li {color: white; 
+        float: left; line-height: 100px; vertical-align: middle; text-align: center;}
+#topMenu ul li a{text-decoration:none; color: white; display: block;
+        width: 120px; font-size: 20px;}
+#topMenu ul li a:hover { color: #00BFFF; background-color: rgba(255,255,255,0.3);}
+
+#container{width:100%; height:100%; position:relative; max-width:1200px; margin:0 auto;}
+#container .content{width:100%; height:20%; position:absolute; }
+#container #Members{top:10%; background:url(../images/contentbg1.png) repeat;}
+#container #Goals{top:30%; background:url(../images/contentbg2.png) repeat;}
+#container #Partners{top:50%; background:url(../images/contentbg3.png) repeat;}
+#container #ContactUs{top:70%; background:url(../images/contentbg4.png) repeat;}
+
+
+footer{width:200px; position:fixed; right:0px; bottom:0px; padding:0px 20px 30px 10px; font-size:8px; color:#7e7e7e; z-index:12;}
+footer address{padding:0px 0px 10px 5px;}
+
+
+/*
+@charset "utf-8";
+@import url(https://cdn.rawgit.com/theeluwin/NotoSansKR-Hestia/master/stylesheets/NotoSansKR-Hestia.css);
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, button, abbr, acronym, address, code, del, 
+dfn, em, img, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, 
+td, hr{margin:0;padding:0;font-size:100%;box-sizing: border-box;}   
+body{height:100%;min-height:100%;font-family:'Noto Sans Korean','Malgun Gothic','맑은고딕','돋움',dotum, sans-serif;font-size:16px;color:#737373;line-height:1.5;background:url(../images/content_bg4.png) repeat;}
+h1, h2, h3, h4, h5, h6 {font-weight:normal}
+ol, ul, li {list-style:none}
+table {width:100%; border-collapse:collapse;border-spacing:0}
+form, fieldset, iframe {display:block;border:0}
+img, button {border:0 none;vertical-align:top;}
+hr {height:0; display:none}
+i, em, address{font-style:normal}
+label, button{cursor:pointer}
+blockquote, q {quotes:none}
+caption, legend {overflow:hidden;visibility:hidden;position:absolute;width:0;height:0;padding:0;margin:0;font-size:0;text-indent:-100%;white-space:nowrap;z-index:-1}
+header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {display:block;box-sizing: border-box;}
+input, textarea, select, button {font-family:'Noto Sans Korean','Malgun Gothic','맑은고딕','돋움',dotum, sans-serif;font-size:16px;color:#919090;line-height:1.5;letter-spacing:0;vertical-align:middle; border:none;}
+input, textarea {margin:0;padding:0;  background:none; box-sizing:border-box;}
+textarea {resize:none}
+a {color:#919090;text-decoration:none}
+a:link, a:visited {text-decoration:none}
+a:hover {text-decoration:none}
+.blind{display: none;overflow: hidden;position: absolute;width: 0;height: 0;padding: 0;margin: 0; font-size: 0;line-height: 0; text-indent: -9999em;visibility: hidden;outline: none;z-index: -1;}
+html,body{overflow:hidden;height:100%;}
